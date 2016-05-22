@@ -41,7 +41,7 @@ extension ViewController: ORKTaskViewControllerDelegate{
     @IBAction func microphoneTapped(sender: AnyObject) {
         let taskViewController = ORKTaskViewController(task: MicrophoneTask, taskRunUUID: nil)
         taskViewController.delegate = self
-        taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String, isDirectory: true)
+        taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0], isDirectory: true)
         presentViewController(taskViewController, animated: true, completion: nil)
     }
     

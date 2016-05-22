@@ -29,6 +29,13 @@ extension ViewController: ORKTaskViewControllerDelegate{
     func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason,
                             error: NSError?){
         // Handle results with taskViewController.result
+        switch reason{
+        case .Completed:
+            let taskResult = taskViewController.result
+            print(taskResult)
+        default:
+            print("task incomplete!")
+        }
         taskViewController.dismissViewControllerAnimated(true, completion: nil)
     }
     

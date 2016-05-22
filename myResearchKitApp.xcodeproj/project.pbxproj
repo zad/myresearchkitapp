@@ -488,6 +488,7 @@
 				15DF8C0F1CF13BA30085DDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15DF8C101CF13BA30085DDCF /* Build configuration list for PBXNativeTarget "myResearchKitAppTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				15DF8C121CF13BA30085DDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

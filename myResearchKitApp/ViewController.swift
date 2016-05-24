@@ -26,8 +26,44 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: ORKTaskViewControllerDelegate{
+    func taskViewController(taskViewController: ORKTaskViewController, viewControllerForStep step: ORKStep) -> ORKStepViewController? {
+        if step.identifier == "music" {
+            return MusicStepViewController(step: step)
+        }else{
+            return nil
+        }
+    }
+    
     func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason,
                             error: NSError?){
+        HealthKitManager.stopMockHeartData()
+        
+        if (taskViewController.task?.identifier == "MusicTask" && reason == .Completed){
+            let clip = ResultParser.findClip(taskViewController.task)
+            print("clip name: \(clip!.rawValue)")
+            
+            let heartURL = ResultParser.findMusicHeartFiles(taskViewController.result)
+            if let heartURL = heartURL {
+                do {
+                    let string = try NSString.init(contentsOfURL: heartURL, encoding: NSUTF8StringEncoding)
+                    print(string)
+                } catch {}
+            }
+        }
+        
+        if (taskViewController.task?.identifier == "WalkTask" && reason == .Completed){
+            let heartURLs = ResultParser.findWalkHeartFiles(taskViewController.result)
+            
+            for url in heartURLs {
+                do{
+                    let string = try NSString.init(contentsOfURL: url, encoding: NSUTF8StringEncoding)
+                    print(string)
+                } catch {}
+            }
+        }
+        
+        
+        
         // Handle results with taskViewController.result
         switch reason{
         case .Completed:
@@ -37,6 +73,20 @@ extension ViewController: ORKTaskViewControllerDelegate{
             print("task incomplete!")
         }
         taskViewController.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func walkTapped(sender: AnyObject) {
+        let taskViewController = ORKTaskViewController(task: WalkTask, taskRunUUID: nil)
+        taskViewController.delegate = self
+        taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0],
+                                                   isDirectory: true
+        )
+        presentViewController(taskViewController, animated: true, completion: nil)
+        HealthKitManager.startMockHeartData()
+    }
+    
+    @IBAction func authorizeTapped(sender: AnyObject) {
+        HealthKitManager.authorizeHealthKit()
     }
     
     @IBAction func consentTapped(sender: AnyObject){
@@ -56,6 +106,16 @@ extension ViewController: ORKTaskViewControllerDelegate{
         let taskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)
         taskViewController.delegate = self
         presentViewController(taskViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func musicTapped(sender: AnyObject) {
+        let taskViewController = ORKTaskViewController(task: MusicTask, taskRunUUID: nil)
+        taskViewController.delegate = self
+        taskViewController.outputDirectory = NSURL(fileURLWithPath:
+            NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0],
+                                                   isDirectory: true)
+        presentViewController(taskViewController, animated: true, completion: nil)
+        HealthKitManager.startMockHeartData()
     }
 }
 

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1522F0641CF2A6BA00EFC144 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1522F0631CF2A6BA00EFC144 /* HealthKit.framework */; };
+		1522F0671CF2A6ED00EFC144 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F0661CF2A6ED00EFC144 /* HealthKitManager.swift */; };
+		1522F0691CF2AAD500EFC144 /* WalkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F0681CF2AAD500EFC144 /* WalkTask.swift */; };
+		1522F06B1CF2ADE000EFC144 /* ResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F06A1CF2ADE000EFC144 /* ResultParser.swift */; };
+		1522F06D1CF2B17C00EFC144 /* MusicClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F06C1CF2B17C00EFC144 /* MusicClip.swift */; };
+		1522F06F1CF2B1C400EFC144 /* MusicStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F06E1CF2B1C400EFC144 /* MusicStep.swift */; };
+		1522F0711CF2B22800EFC144 /* MusicStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F0701CF2B22800EFC144 /* MusicStepViewController.swift */; };
+		1522F0731CF2B37300EFC144 /* MusicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F0721CF2B37300EFC144 /* MusicTask.swift */; };
+		1522F07A1CF4E06200EFC144 /* chill_preview_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1522F0741CF4E06200EFC144 /* chill_preview_3.mp3 */; };
+		1522F07B1CF4E06200EFC144 /* chill_preview_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1522F0751CF4E06200EFC144 /* chill_preview_4.mp3 */; };
+		1522F07C1CF4E06200EFC144 /* dark_preview_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1522F0761CF4E06200EFC144 /* dark_preview_4.mp3 */; };
+		1522F07D1CF4E06200EFC144 /* happy_preview_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1522F0771CF4E06200EFC144 /* happy_preview_1.mp3 */; };
+		1522F07E1CF4E06200EFC144 /* light_preview_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1522F0781CF4E06200EFC144 /* light_preview_2.mp3 */; };
+		1522F07F1CF4E06200EFC144 /* light_preview_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1522F0791CF4E06200EFC144 /* light_preview_3.mp3 */; };
 		15DF8BF41CF13BA30085DDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF8BF31CF13BA30085DDCF /* AppDelegate.swift */; };
 		15DF8BF61CF13BA30085DDCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF8BF51CF13BA30085DDCF /* ViewController.swift */; };
 		15DF8BF91CF13BA30085DDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DF8BF71CF13BA30085DDCF /* Main.storyboard */; };
@@ -67,6 +81,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1522F0631CF2A6BA00EFC144 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		1522F0651CF2A6BA00EFC144 /* myResearchKitApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = myResearchKitApp.entitlements; sourceTree = "<group>"; };
+		1522F0661CF2A6ED00EFC144 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		1522F0681CF2AAD500EFC144 /* WalkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkTask.swift; sourceTree = "<group>"; };
+		1522F06A1CF2ADE000EFC144 /* ResultParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultParser.swift; sourceTree = "<group>"; };
+		1522F06C1CF2B17C00EFC144 /* MusicClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicClip.swift; sourceTree = "<group>"; };
+		1522F06E1CF2B1C400EFC144 /* MusicStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStep.swift; sourceTree = "<group>"; };
+		1522F0701CF2B22800EFC144 /* MusicStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStepViewController.swift; sourceTree = "<group>"; };
+		1522F0721CF2B37300EFC144 /* MusicTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTask.swift; sourceTree = "<group>"; };
+		1522F0741CF4E06200EFC144 /* chill_preview_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chill_preview_3.mp3; sourceTree = "<group>"; };
+		1522F0751CF4E06200EFC144 /* chill_preview_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chill_preview_4.mp3; sourceTree = "<group>"; };
+		1522F0761CF4E06200EFC144 /* dark_preview_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dark_preview_4.mp3; sourceTree = "<group>"; };
+		1522F0771CF4E06200EFC144 /* happy_preview_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happy_preview_1.mp3; sourceTree = "<group>"; };
+		1522F0781CF4E06200EFC144 /* light_preview_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = light_preview_2.mp3; sourceTree = "<group>"; };
+		1522F0791CF4E06200EFC144 /* light_preview_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = light_preview_3.mp3; sourceTree = "<group>"; };
 		15DF8BF01CF13BA30085DDCF /* myResearchKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myResearchKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DF8BF31CF13BA30085DDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15DF8BF51CF13BA30085DDCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15DF8C221CF13E5B0085DDCF /* ResearchKit.framework in Frameworks */,
+				1522F0641CF2A6BA00EFC144 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +136,7 @@
 		15DF8BE71CF13BA30085DDCF = {
 			isa = PBXGroup;
 			children = (
+				1522F0631CF2A6BA00EFC144 /* HealthKit.framework */,
 				15DF8C131CF13CFB0085DDCF /* ResearchKit.xcodeproj */,
 				15DF8BF21CF13BA30085DDCF /* myResearchKitApp */,
 				15DF8C071CF13BA30085DDCF /* myResearchKitAppTests */,
@@ -125,6 +156,13 @@
 		15DF8BF21CF13BA30085DDCF /* myResearchKitApp */ = {
 			isa = PBXGroup;
 			children = (
+				1522F0741CF4E06200EFC144 /* chill_preview_3.mp3 */,
+				1522F0751CF4E06200EFC144 /* chill_preview_4.mp3 */,
+				1522F0761CF4E06200EFC144 /* dark_preview_4.mp3 */,
+				1522F0771CF4E06200EFC144 /* happy_preview_1.mp3 */,
+				1522F0781CF4E06200EFC144 /* light_preview_2.mp3 */,
+				1522F0791CF4E06200EFC144 /* light_preview_3.mp3 */,
+				1522F0651CF2A6BA00EFC144 /* myResearchKitApp.entitlements */,
 				15DF8BF31CF13BA30085DDCF /* AppDelegate.swift */,
 				15DF8BF51CF13BA30085DDCF /* ViewController.swift */,
 				15DF8BF71CF13BA30085DDCF /* Main.storyboard */,
@@ -135,6 +173,13 @@
 				15DF8BFF1CF13BA30085DDCF /* Info.plist */,
 				15DF8C271CF13ECB0085DDCF /* ConsentDocument.swift */,
 				15DF8C291CF141AB0085DDCF /* ConsentTask.swift */,
+				1522F0661CF2A6ED00EFC144 /* HealthKitManager.swift */,
+				1522F0681CF2AAD500EFC144 /* WalkTask.swift */,
+				1522F06A1CF2ADE000EFC144 /* ResultParser.swift */,
+				1522F06C1CF2B17C00EFC144 /* MusicClip.swift */,
+				1522F06E1CF2B1C400EFC144 /* MusicStep.swift */,
+				1522F0701CF2B22800EFC144 /* MusicStepViewController.swift */,
+				1522F0721CF2B37300EFC144 /* MusicTask.swift */,
 			);
 			path = myResearchKitApp;
 			sourceTree = "<group>";
@@ -210,6 +255,11 @@
 					15DF8BEF1CF13BA30085DDCF = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = NU49BMP793;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					15DF8C031CF13BA30085DDCF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -264,8 +314,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1522F07A1CF4E06200EFC144 /* chill_preview_3.mp3 in Resources */,
 				15DF8BFE1CF13BA30085DDCF /* LaunchScreen.storyboard in Resources */,
+				1522F07F1CF4E06200EFC144 /* light_preview_3.mp3 in Resources */,
 				15DF8BFB1CF13BA30085DDCF /* Assets.xcassets in Resources */,
+				1522F07E1CF4E06200EFC144 /* light_preview_2.mp3 in Resources */,
+				1522F07D1CF4E06200EFC144 /* happy_preview_1.mp3 in Resources */,
+				1522F07B1CF4E06200EFC144 /* chill_preview_4.mp3 in Resources */,
+				1522F07C1CF4E06200EFC144 /* dark_preview_4.mp3 in Resources */,
 				15DF8BF91CF13BA30085DDCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,10 +341,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				15DF8BF61CF13BA30085DDCF /* ViewController.swift in Sources */,
+				1522F06D1CF2B17C00EFC144 /* MusicClip.swift in Sources */,
+				1522F06B1CF2ADE000EFC144 /* ResultParser.swift in Sources */,
+				1522F06F1CF2B1C400EFC144 /* MusicStep.swift in Sources */,
 				15DF8C2A1CF141AB0085DDCF /* ConsentTask.swift in Sources */,
 				15DF8C2E1CF16A370085DDCF /* MicrophoneTask.swift in Sources */,
+				1522F0691CF2AAD500EFC144 /* WalkTask.swift in Sources */,
 				15DF8C2C1CF1676C0085DDCF /* SurveyTask.swift in Sources */,
+				1522F0711CF2B22800EFC144 /* MusicStepViewController.swift in Sources */,
 				15DF8C281CF13ECB0085DDCF /* ConsentDocument.swift in Sources */,
+				1522F0671CF2A6ED00EFC144 /* HealthKitManager.swift in Sources */,
+				1522F0731CF2B37300EFC144 /* MusicTask.swift in Sources */,
 				15DF8BF41CF13BA30085DDCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = myResearchKitApp/myResearchKitApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = myResearchKitApp/Info.plist;
@@ -436,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = myResearchKitApp/myResearchKitApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = myResearchKitApp/Info.plist;

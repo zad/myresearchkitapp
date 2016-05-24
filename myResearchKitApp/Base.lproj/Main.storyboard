@@ -43,12 +43,41 @@
                                     <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5Y-CM-Iti"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bOD-kJ-ElV">
+                                <rect key="frame" x="255" y="251" width="66" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsV-4j-R0m">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                        <state key="normal" title="Authorize"/>
+                                        <connections>
+                                            <action selector="authorizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxs-5W-S5C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjT-SZ-bTv">
+                                <rect key="frame" x="271" y="300" width="34" height="30"/>
+                                <state key="normal" title="Walk"/>
+                                <connections>
+                                    <action selector="walkTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nfY-3e-LHY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRM-8e-jvb">
+                                <rect key="frame" x="268" y="354" width="41" height="30"/>
+                                <state key="normal" title="Music"/>
+                                <connections>
+                                    <action selector="musicTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJu-ov-8cq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QRM-8e-jvb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Rv-90-eeB"/>
                             <constraint firstItem="fE4-Fj-9nP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UzL-WX-EzD"/>
+                            <constraint firstItem="mjT-SZ-bTv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wuz-A7-XiK"/>
                             <constraint firstItem="fuw-hV-3A1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tdw-7Y-MOB"/>
                             <constraint firstItem="jK5-si-UF7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uuK-nH-WYB"/>
+                            <constraint firstItem="bOD-kJ-ElV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yBB-DN-pU3"/>
                         </constraints>
                     </view>
                 </viewController>
